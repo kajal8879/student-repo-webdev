@@ -1,9 +1,18 @@
 .img {
   display: block;
   margin: 0 auto;
+  /* if we dont match width and height oval shape circle will be formed */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .bio {
   margin: 20px auto;
   width: 300px;
+}
+
+p.bio::first-line {
+  color: black;
+  font-weight: bold;
 }
