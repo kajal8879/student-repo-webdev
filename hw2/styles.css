@@ -6,16 +6,17 @@
   --black: #080808;
   --white: #fefefe;
   --gray: #565656;
-
+  --lgray: #d3d3d3;
   --teal: #006060;
   --violetred: #a2106d;
   --orange: #ffa500;
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
+  margin: 0%;
 }
 
 h1 {
@@ -27,9 +28,152 @@ form {
 }
 
 /* Code for exercise 01-navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--black);
+  justify-content: flex-end;
+  display: flex;
+  padding: 20px;
+}
 
+li {
+  float: left;
+}
+
+li a {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: var(--violetred);
+}
 /* Code for exercise 02-cards */
 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-container > * {
+  flex: 0 0 31%;
+}
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+.card {
+  border-style: solid;
+  border-color: var(--gray);
+  min-width: 300px;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.catData {
+  padding: 15px;
+}
+.moreInfo {
+  margin: 15px;
+  padding: 15px 32px;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--black);
+  width: 90%;
+}
+.moreInfo:hover {
+  background-color: var(--violetred);
+  color: var(--white);
+  border: var(--violetred);
+}
 /* Code for exercise 03-table */
 
+th,
+td {
+  border: 1px solid black;
+  min-width: fit-content(30em);
+  padding: 15px;
+  width: 200px;
+}
+
+tr {
+  height: 50px;
+}
+
+tbody tr:hover {
+  background-color: var(--orange);
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column-header {
+  color: var(--white);
+  background-color: var(--black);
+}
+.row-header {
+  color: var(--white);
+  background-color: var(--violetred);
+}
+th {
+  width: 200px;
+}
+
 /* Code for exercise 04-form */
+.subHeading {
+  color: var(--gray);
+  margin-top: -20px;
+}
+.signUpForm {
+  border: 1px solid black;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  padding: 25px;
+}
+.inputField {
+  float: right;
+  width: 220px;
+  height: 25px;
+  border: 1px solid black;
+}
+.formHeading,
+.labelField {
+  font-weight: bold;
+}
+.labelField {
+  margin: -10px;
+}
+.formField {
+  padding: 10px;
+}
+input[type="submit"],
+input[type="reset"] {
+  margin: auto;
+  width: 49%;
+  height: 35px;
+}
+input[type="submit"] {
+  background-color: var(--black);
+  color: var(--white);
+}
+input[type="submit"]:hover {
+  background-color: var(--violetred);
+  border: var(--violetred);
+}
+input[type="reset"] {
+  background-color: var(--white);
+}
+input[type="reset"]:hover {
+  background-color: var(--lgray);
+}
+.radioBtn {
+  margin-left: -10px;
+}
