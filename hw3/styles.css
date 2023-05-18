@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
 }
@@ -34,8 +34,71 @@ form {
 }
 
 /* Code for exercise 01-hello */
+.profileImg {
+  display: block;
+  margin: 0 auto;
+  /* if we dont match width and height oval shape circle will be formed */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 
+.bio {
+  margin: 20px auto;
+  width: 300px;
+}
 /* Code for exercise 02-form */
+.subHeading {
+  color: var(--gray);
+  margin-top: -20px;
+}
+.signUpForm {
+  border: 1px solid black;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  padding: 25px;
+}
+.inputField {
+  float: right;
+  width: 220px;
+  height: 25px;
+  border: 1px solid black;
+}
+.formHeading,
+.labelField {
+  font-weight: bold;
+}
+.labelField {
+  margin: -10px;
+}
+.formField {
+  padding: 10px;
+}
+input[type="submit"],
+input[type="reset"] {
+  margin: auto;
+  width: 49%;
+  height: 35px;
+}
+input[type="submit"] {
+  background-color: var(--black);
+  color: var(--white);
+}
+input[type="submit"]:hover {
+  background-color: var(--violetred);
+  border: var(--violetred);
+}
+input[type="reset"] {
+  background-color: var(--white);
+}
+input[type="reset"]:hover {
+  background-color: var(--lgray);
+}
+.radioBtn {
+  margin-left: -10px;
+}
 
 /* Code for exercise 03-starships */
 
@@ -50,4 +113,57 @@ form {
 .btn {
   width: 80px;
   padding: 10px;
+  background-color: var(--black);
+  color: var(--white);
+}
+.btn:hover {
+  background-color: var(--violetred);
+  border: var(--violetred);
+}
+
+.ship {
+  border-radius: 10px;
+  border-color: var(--gray);
+  min-width: 400px;
+  height: auto;
+  margin: 10px;
+  flex: 0 0 47%;
+  background-color: #fefefe;
+  padding: 15px;
+}
+
+.nameDiv {
+  font-weight: bold;
+  font-size: x-large;
+  flex: 1;
+}
+.nameCreditContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.creditsDiv {
+  text-align: end;
+  font-weight: bold;
+  font-size: x-large;
+  flex: 1;
+}
+.manufacturerDiv {
+  padding: 15px 0px;
+}
+.speedCapacityContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 0px;
+}
+.atmospheringSpeed {
+  text-align: center;
+  font-size: x-large;
+  border-right: 2px solid;
+  border-color: var(--gray);
+  flex: 1;
+}
+.cargoCapacity {
+  text-align: center;
+  font-size: x-large;
+  flex: 1;
 }

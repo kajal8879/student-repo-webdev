@@ -11,7 +11,93 @@
   <body>
     <main>
       <h1>Exercise 02 - Form</h1>
-      <!-- You can reuse the form you created in HW 2 -->
+      <form class="signUpForm" id="mainForm">
+        <h2 class="formHeading">Sign Up Form</h2>
+        <h3 class="subHeading">Fill up the items in the form below.</h3>
+        <div class="formField">
+          <label class="labelField" for="name">Name:</label>
+          <input
+            class="inputField"
+            type="text"
+            id="name"
+            name="name"
+            required
+          /><br />
+        </div>
+        <div class="formField">
+          <label class="labelField" for="username">Username:</label>
+          <input
+            class="inputField"
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br />
+        </div>
+        <div class="formField">
+          <label class="labelField" for="email">Email:</label>
+          <input
+            class="inputField"
+            type="email"
+            id="email"
+            name="email"
+            required
+          /><br />
+        </div>
+        <div class="formField">
+          <label class="labelField" for="password">Password:</label>
+          <input
+            class="inputField"
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br />
+        </div>
+        <div class="formField">
+          <label class="labelField" for="dob">Date of Birth:</label>
+          <input class="inputField" type="date" id="dob" name="dob" /><br />
+        </div>
+        <div class="formField">
+          <label class="labelField">Preferred Pronouns</label><br />
+          <input
+            class="radioBtn"
+            type="radio"
+            id="she"
+            name="pronouns"
+            value="she/her"
+            required
+          />
+          <label for="she">She/her</label><br />
+          <input
+            class="radioBtn"
+            type="radio"
+            id="he"
+            name="pronouns"
+            value="he/him"
+          />
+          <label for="he">He/him</label><br />
+          <input
+            class="radioBtn"
+            type="radio"
+            id="they"
+            name="pronouns"
+            value="they/them"
+          />
+          <label for="they">They/them</label><br />
+          <input
+            class="radioBtn"
+            type="radio"
+            id="noSay"
+            name="pronouns"
+            value="noSay"
+          />
+          <label for="noSay">I prefer not to say</label><br /><br />
+        </div>
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </form>
     </main>
   </body>
 </html>
